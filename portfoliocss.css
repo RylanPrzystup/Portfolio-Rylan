@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body.bodyHome-container {
+    display: grid;
+    grid-template-areas:
+        "header header header sidebar"
+        "body-home body-home body-home sidebar"
+        "body-home body-home body-home sidebar"
+        "body-home body-home body-home sidebar"
+        "body-home body-home body-home sidebar"
+        "body-home body-home body-home sidebar"
+        "body-home body-home body-home sidebar"
+        "body-home body-home body-home sidebar"
+        "body-home body-home body-home sidebar"
+        "footer footer footer sidebar";
+    min-height: 100vh;
+    background: #f5f5f5;
+}
+
+header {
+    background-color: #0D3B66;
+    grid-area: header;
+    width: 80vw;
+    height: 10vh;
+    color: #FAF0CA;
+    display: flex;
+    align-items: center;
+}
+
+.header-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.nav-bar ul {
+    display: flex;
+    list-style: none;
+    gap: 1em;
+}
+
+.nav-bar a {
+    color: #FAF0CA;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+}
+
+.nav-bar a:hover {
+    background: #FAF0CA;
+    color: #0D3B66;
+}
+
+img[alt="logo"] {
+    height: 40px;
+}
+
+main {
+    background-color: #FAF0CA;
+    grid-area: body-home;
+    height: 80vh;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-heading {
+    text-align: center;
+    padding: 40px 0 10px 0;
+    font-size: 2rem;
+    color: #0D3B66;
+}
+
+.left-main {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 3em;
+    margin-top: 2em;
+}
+
+.home-box {
+    background-color: #FAF0CA;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    padding: 1.5em;
+    width: 18rem;
+    min-height: 18rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boxHeader {
+    font-size: 1.2rem;
+    color: #0D3B66;
+    margin-bottom: 0.5em;
+}
+
+.lineInBox {
+    width: 80%;
+    border: none;
+    border-top: 2px solid #EB9486;
+    margin-bottom: 1em;
+}
+
+.boxParagragh {
+    font-size: 1rem;
+    color: #222;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+button {
+    background: #EB9486;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 0.5em 1em;
+    font-size: 1rem;
+    cursor: pointer;
+}
+button:hover {
+    background: #d97a5c;
+    color: #fff;
+}
+
+aside {
+    background-color: #EB9486;
+    grid-area: sidebar;
+    width: 20vw;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    padding: 2em;
+    box-sizing: border-box;
+}
+
+.aside-box {
+    width: 100%;
+    height: 98%;
+    background: transparent;
+    border: 6px dotted #c96a5c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+}
+
+footer {
+    background-color: #86A5D9;
+    grid-area: footer;
+    width: 80vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1.1rem;
+    margin: 0 auto;
+}
+
+body.bodyProject-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: #f5f5f5;
+}
+
+.header-bar-projects {
+    background-color: #0D3B66;
+    color: #FAF0CA;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 10vh;
+    padding: 20px;
+}
+
+.mainHome-container-projects {
+    background-color: #FAF0CA;
+    width: 80vw;
+    flex: 1;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 80vh;
+    box-sizing: border-box;
+}
+
+.footer-projects {
+    background-color: #86A5D9;
+    color: #fff;
+    font-size: 1.1rem;
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 900px) {
+    .left-main {
+        flex-direction: column;
+        align-items: center;
+        gap: 2em;
+    }
+    aside {
+        width: 100vw;
+        height: auto;
+        padding: 1em;
+    }
+    main, footer, header {
+        width: 100vw;
+    }
+    .mainHome-container-projects {
+        width: 100vw;
+        padding: 1em;
+    }
+    .header-bar-projects,
+    .footer-projects {
+        width: 100vw;
+    }
+}
