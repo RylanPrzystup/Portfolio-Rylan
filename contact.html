@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Rylan P.</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body class="bodyContact-container">
+
+    <header class="contact-header">
+        <div class="header-bar">
+            <h1>Rylan P.</h1>
+            <nav class="nav-bar">
+                <ul>
+                    <a href="index.html"><li>Home</li></a>
+                    <a href="projects.html"><li>Projects</li></a>
+                    <a href="resume.html"><li>Resume</li></a>
+                    <a href="contact.html"><li style="text-decoration: underline;">Contact</li></a>
+                </ul>
+            </nav>
+            <img src="images/logo.png" alt="logo" title="company logo">
+        </div>
+    </header>
+
+    <main class="contact-main">
+        <h1 class="contact-page-title">Contact Me</h1>
+
+        <div class="contact-card">
+            <p class="contact-intro">Have a question or want to work together? Send me a message.</p>
+
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Your name">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Your email">
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" rows="6" placeholder="Your message"></textarea>
+            </div>
+
+            <button onclick="handleSubmit()">Send Message</button>
+            <p id="confirm-msg" class="confirm-msg"></p>
+        </div>
+
+        <div class="contact-links">
+            <p>Or reach me directly:</p>
+            <a href="mailto:Rylanprzystup9@gmail.com">Rylanprzystup9@gmail.com</a>
+        </div>
+    </main>
+
+    <footer class="contact-footer">
+        <p>&copy; 2026 Rylan P. | Portfolio Project</p>
+    </footer>
+
+    <script>
+        function handleSubmit() {
+            let name = document.getElementById("name").value.trim();
+            let email = document.getElementById("email").value.trim();
+            let message = document.getElementById("message").value.trim();
+            let confirm = document.getElementById("confirm-msg");
+
+            if (!name || !email || !message) {
+                confirm.textContent = "Please fill out all fields.";
+                confirm.style.color = "#c0392b";
+                return;
+            }
+
+            confirm.textContent = "Message sent! I'll get back to you soon.";
+            confirm.style.color = "#0D3B66";
+
+            document.getElementById("name").value = "";
+            document.getElementById("email").value = "";
+            document.getElementById("message").value = "";
+        }
+    </script>
+
+</body>
+</html>
