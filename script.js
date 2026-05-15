@@ -87,6 +87,26 @@ let projects = [
         description: "Create and Study using your own flash cards",
         link: "https://rylanprzystup.github.io/Flash-Cards/"
 
+    },
+    {
+        name: "Delivery tracker",
+        description: "An app that allows users to track their package deliveries in real-time.",
+        link: "https://rylanprzystup.github.io/pizza-delivery/"
+    },
+    {
+        name: "traffic light",
+        description: "A simple traffic light simulation that changes colors at set intervals.",
+        link: "https://rylanprzystup.github.io/traffic-light/"
+    },
+    {
+        name: "Lens",
+        description: "A webpage that compares different types of camera lenses with their specifications",
+        link: "https://rylanprzystup.github.io/Lens/"
+    },
+    {
+        name: "Dinodecks",
+        description: "A card game where players collect and battle with dinosaur-themed cards.",
+        link: "https://rylanprzystup.github.io/DINODEX/"
     }
 ];
 
