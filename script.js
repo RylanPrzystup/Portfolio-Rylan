@@ -89,12 +89,12 @@ let projects = [
 
     },
     {
-        name: "Delivery tracker",
+        name: "Delivery Tracker",
         description: "An app that allows users to track their package deliveries in real-time.",
         link: "https://rylanprzystup.github.io/pizza-delivery/"
     },
     {
-        name: "traffic light",
+        name: "Traffic Light",
         description: "A simple traffic light simulation that changes colors at set intervals.",
         link: "https://rylanprzystup.github.io/traffic-light/"
     },
@@ -109,12 +109,12 @@ let projects = [
         link: "https://rylanprzystup.github.io/DINODEX/"
     },
     {
-        name: "drag and drop",
+        name: "Drag and Drop",
         description: "A drag-and-drop interface that allows users to rearrange items on the page.",
         link: "https://rylanprzystup.github.io/drag-and-drop/"
     },
     {
-        name: "JSON practice",
+        name: "JSON Practice",
         description: "A web application for practicing JSON data manipulation and visualization.",
         link: "hhttps://rylanprzystup.github.io/json-project/"
     }
