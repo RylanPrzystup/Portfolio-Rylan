@@ -107,6 +107,16 @@ let projects = [
         name: "Dinodecks",
         description: "A card game where players collect and battle with dinosaur-themed cards.",
         link: "https://rylanprzystup.github.io/DINODEX/"
+    },
+    {
+        name: "drag and drop",
+        description: "A drag-and-drop interface that allows users to rearrange items on the page.",
+        link: "https://rylanprzystup.github.io/drag-and-drop/"
+    },
+    {
+        name: "JSON practice",
+        description: "A web application for practicing JSON data manipulation and visualization.",
+        link: "hhttps://rylanprzystup.github.io/json-project/"
     }
 ];
 
